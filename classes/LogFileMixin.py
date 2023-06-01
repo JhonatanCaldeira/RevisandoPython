@@ -1,4 +1,4 @@
-from classes.log import Log
+from classes.Log import Log
 from pathlib import Path
 
 LOG_FILE = Path(__file__).parent.joinpath('../log') / 'log.txt'

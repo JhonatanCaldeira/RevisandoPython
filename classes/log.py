@@ -1,8 +1,9 @@
-# Abstração
+from abc import ABC, abstractmethod
 
-class Log:
-    def _log(self, msg):
-        raise NotImplementedError('Implemente o método log')
+
+class Log(ABC):
+    @abstractmethod
+    def _log(self, msg): ...
 
     def log_error(self, msg):
         return self._log(f'Error: {msg}')
